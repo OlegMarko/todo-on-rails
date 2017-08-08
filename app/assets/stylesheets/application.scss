@@ -13,3 +13,32 @@
  *= require_tree .
  *= require_self
  */
+
+ body {font-size: 1.75em}
+
+ .buffer-top {
+     margin-top: 2em;
+ }
+
+ .task {
+     margin-bottom: 1em;
+
+     .action {opacity: 0}
+
+     &:hover .action {
+         opacity: 1;
+         transition: opacity 0.5s ease
+     }
+ }
+
+ .priority-1 {color: #0c0}
+ .priority-2 {color: #cc0}
+ .priority-3 {color: #c00}
+
+ .completed-true .title {color: #777; text-decoration: line-through;}
+
+ .done {
+     margin-left: 10px;
+ }
+
+ .completed-true .done {display: none}

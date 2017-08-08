@@ -1,15 +1,19 @@
 <div class="col-md-12">
     <h1>My task</h1>
 
-    <%= link_to "New", new_task_path, class: 'btn btn-primary' %>
+    <div class="buffer-top">
+        <%= link_to "New", new_task_path, class: 'btn btn-primary' %>
+    </div>
 
-    <% @tasks.each do |task| %>
-        <%= render partial: 'task', object: task %>
-    <% end %>
+    <div class="buffer-top">
+        <% @tasks.each do |task| %>
+            <%= render partial: 'task', object: task %>
+        <% end %>
 
-    <hr />
+        <hr />
 
-    <% @completed_task.each do |task| %>
-        <%= render partial: 'task', object: task %>
-    <% end %>
+        <% @completed_task.each do |task| %>
+            <%= render partial: 'task', object: task %>
+        <% end %>
+    </div>
 </div>
