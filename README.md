@@ -1,6 +1,7 @@
 # ToDo list on RoR
 
 #### [Link to test site](https://f-todo-list.herokuapp.com/)
+[user: test, password: pass]
 
 ### Run this app in local
   - cd /your_work_path
